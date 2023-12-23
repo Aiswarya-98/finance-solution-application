@@ -68,10 +68,7 @@ function addincomeArray(type, amt, bal) {
   localStorage.setItem(loggedkey, JSON.stringify(inObj))
 }
 
-function logout() {
-  localStorage.clear()
-  window.location = "./home.html"
-}
+
 
 // Add expense array
 
@@ -192,4 +189,9 @@ function clearData() {
     alert("Data cleared successfully")
     location.reload()
   }
+}
+
+function logout() {
+  localStorage.clear()
+  window.location = "./index.html"
 }
